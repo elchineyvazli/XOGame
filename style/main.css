@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+body .xoContainer {
+  width: 606px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+body .xoContainer .part {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  border: solid 1px white;
+}
+
+.winPopup {
+  width: 606px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: solid 2px white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.winPopup .restartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: solid 1px white;
+  cursor: pointer;
+}
+.winPopup .restartButton:hover {
+  background-color: blue;
+  border: none;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 660px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  body .xoContainer {
+    width: 303px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  body .xoContainer .part {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: solid 1px white;
+  }
+  .winPopup {
+    width: 303px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: solid 2px white;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .winPopup .restartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: solid 1px white;
+    cursor: pointer;
+    background-color: red;
+  }
+  .winPopup .restartButton:hover {
+    background-color: blue;
+    border: none;
+    transition: 0.6s;
+  }
+}/*# sourceMappingURL=main.css.map */
